@@ -29,7 +29,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         context = this
         splashScreen.setKeepOnScreenCondition { keepSplashOnScreen }
-        Handler(Looper.getMainLooper()).postDelayed({ keepSplashOnScreen = false }, delay)
+        Handler(Looper.getMainLooper()).postDelayed({
+            keepSplashOnScreen = false
+                                                    }, delay)
 
     }
 
